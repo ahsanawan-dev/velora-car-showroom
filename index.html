@@ -1,0 +1,391 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090b0e">
+  <meta name="description" content="VELORA Motors V3 — an interactive luxury automotive showroom concept designed by Muhammad Ahsan Awan.">
+  <title>VELORA Motors V3 | The Art of Motion</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <header class="header" id="header">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a class="logo" href="#home">VELORA<span>.</span>
+        <small>THE ART OF MOTION</small>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" type="button"
+        aria-controls="navLinks" aria-expanded="false"
+        aria-label="Open navigation">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#collection">Collection</a>
+        <a href="#explore">Explore Cars</a>
+        <a href="#experience">Experience</a>
+        <a class="nav-cta" href="#contact">Let's Connect ↗</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <p class="eyebrow">✦ VELORA / DIGITAL SHOWROOM 003</p>
+          <h1>THE ART<br>OF <em>MOTION.</em></h1>
+          <p class="hero-description">
+            Five extraordinary performance cars.
+            Twenty-five visual perspectives.
+            One immersive automotive experience.
+          </p>
+          <div class="actions">
+            <a class="btn btn-gold" href="#collection">Explore Cars ↗</a>
+            <a class="btn btn-border" href="#explore"
+              id="heroExplore">View Every Angle →</a>
+          </div>
+          <div class="hero-bottom-note">
+            REAL PHOTOGRAPHY <span>✦</span> INTERACTIVE GALLERY
+            <span>✦</span> RESPONSIVE DESIGN
+          </div>
+        </div>
+
+        <div class="hero-stage">
+          <div class="stage-heading">
+            <span>FEATURED AUTOMOTIVE ICON</span>
+            <span class="live-indicator">● LIVE SHOWROOM</span>
+          </div>
+          <div class="stage-photo media-frame">
+            <img id="heroImage"
+              src="assets/images/revuelto/revuelto-front.jpg"
+              alt="Front view of a blue Lamborghini"
+              fetchpriority="high">
+          </div>
+          <div class="stage-info">
+            <div>
+              <span class="eyebrow" id="heroCategory">HYBRID SUPERCAR</span>
+              <h2 id="heroName">Lamborghini Revuelto</h2>
+              <p id="heroDescription">An electrified V12 flagship.</p>
+            </div>
+            <span class="stage-counter" id="heroCount">01 / 05</span>
+          </div>
+          <div class="stage-controls">
+            <button id="heroPrev" type="button"
+              aria-label="Previous featured car">←</button>
+            <div class="hero-dots" id="heroDots"
+              aria-label="Choose featured car"></div>
+            <button id="heroNext" type="button"
+              aria-label="Next featured car">→</button>
+          </div>
+          <p class="sr-only" id="heroStatus" role="status"></p>
+        </div>
+      </div>
+    </section>
+
+    <div class="brand-strip">
+      <div class="container">
+        <span>DESIGN</span><b>✦</b>
+        <span>PERFORMANCE</span><b>✦</b>
+        <span>ENGINEERING</span><b>✦</b>
+        <span>EXPERIENCE</span>
+      </div>
+    </div>
+
+    <!-- FIVE CARS -->
+    <section class="section container" id="collection">
+      <div class="section-heading reveal">
+        <div>
+          <p class="eyebrow">01 / CURATED COLLECTION</p>
+          <h2>THE ICONIC <em>FIVE.</em></h2>
+        </div>
+        <p>Explore five remarkable cars through genuine
+          automotive photography and interactive galleries.</p>
+      </div>
+
+      <div class="collection-toolbar">
+        <div class="filter-group" aria-label="Filter cars">
+          <button class="filter active" data-filter="all"
+            type="button" aria-pressed="true">All Models</button>
+          <button class="filter" data-filter="hybrid"
+            type="button" aria-pressed="false">Hybrids</button>
+          <button class="filter" data-filter="performance"
+            type="button" aria-pressed="false">Performance</button>
+          <button class="filter" data-filter="touring"
+            type="button" aria-pressed="false">Grand Touring</button>
+        </div>
+        <span id="collectionCount" aria-live="polite">05 MODELS</span>
+      </div>
+
+      <div class="car-grid" id="carGrid">
+        <article class="car-card reveal" data-category="hybrid">
+          <div class="card-media media-frame">
+            <img src="assets/images/revuelto/revuelto-front.jpg"
+              alt="Lamborghini Revuelto front view" loading="lazy">
+            <span class="card-label">01 / HYBRID SUPERCAR</span>
+          </div>
+          <div class="card-content">
+            <span>LAMBORGHINI</span>
+            <h3>Revuelto</h3>
+            <p>Electrified V12 engineering.</p>
+            <button class="card-button" type="button"
+              data-select-car="0">Explore 5 Views <span>↗</span></button>
+          </div>
+        </article>
+
+        <article class="car-card reveal" data-category="hybrid">
+          <div class="card-media media-frame">
+            <img src="assets/images/sf90/sf90-front.jpg"
+              alt="Ferrari SF90 front view" loading="lazy">
+            <span class="card-label">02 / HYBRID SUPERCAR</span>
+          </div>
+          <div class="card-content">
+            <span>FERRARI</span>
+            <h3>SF90 Stradale</h3>
+            <p>Italian hybrid performance.</p>
+            <button class="card-button" type="button"
+              data-select-car="1">Explore 5 Views <span>↗</span></button>
+          </div>
+        </article>
+
+        <article class="car-card reveal" data-category="performance">
+          <div class="card-media media-frame">
+            <img src="assets/images/gt3rs/gt3rs-front (1).jpg"
+              alt="Porsche 911 GT3 RS front view" loading="lazy">
+            <span class="card-label">03 / TRACK-FOCUSED</span>
+          </div>
+          <div class="card-content">
+            <span>PORSCHE</span>
+            <h3>911 GT3 RS</h3>
+            <p>Precision built for the track.</p>
+            <button class="card-button" type="button"
+              data-select-car="2">Explore 5 Views <span>↗</span></button>
+          </div>
+        </article>
+
+        <article class="car-card reveal" data-category="performance">
+          <div class="card-media media-frame">
+            <img src="assets/images/mclaren750s/750s-front.jpg"
+              alt="McLaren 750S front view" loading="lazy">
+            <span class="card-label">04 / SUPERCAR</span>
+          </div>
+          <div class="card-content">
+            <span>McLAREN</span>
+            <h3>750S Spider</h3>
+            <p>Lightweight open-top excitement.</p>
+            <button class="card-button" type="button"
+              data-select-car="3">Explore 5 Views <span>↗</span></button>
+          </div>
+        </article>
+
+        <article class="car-card reveal" data-category="touring">
+          <div class="card-media media-frame">
+            <img src="assets/images/amggt/amggt-front.jpg"
+              alt="Mercedes-AMG GT front view" loading="lazy">
+            <span class="card-label">05 / GRAND TOURING</span>
+          </div>
+          <div class="card-content">
+            <span>MERCEDES-AMG</span>
+            <h3>GT 63</h3>
+            <p>Performance meets refinement.</p>
+            <button class="card-button" type="button"
+              data-select-car="4">Explore 5 Views <span>↗</span></button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- FIVE ANGLE PHOTO EXPLORER -->
+    <section class="explore-section" id="explore">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow">02 / INTERACTIVE EXPERIENCE</p>
+            <h2>EVERY <em>ANGLE.</em></h2>
+          </div>
+          <p>Switch between front, side, rear, interior and
+            wheel views. See every car from a new perspective.</p>
+        </div>
+
+        <div class="explorer-layout">
+          <div class="explorer-visual">
+            <div class="explorer-photo media-frame">
+              <img id="explorerImage"
+                src="assets/images/revuelto/revuelto-front.jpg"
+                alt="Lamborghini Revuelto front view">
+            </div>
+            <div class="explorer-photo-bottom">
+              <span id="explorerAngleLabel">FRONT VIEW / 01</span>
+              <button type="button" id="openFullscreen">
+                Fullscreen Gallery ↗
+              </button>
+            </div>
+            <div class="thumbnails" id="thumbnails"
+              aria-label="Select photographic angle"></div>
+          </div>
+
+          <div class="explorer-details">
+            <span class="eyebrow">SELECTED AUTOMOTIVE ICON</span>
+            <h3 id="selectedCarName">Lamborghini Revuelto</h3>
+            <p id="selectedCarDescription">
+              An electrified V12 flagship.
+            </p>
+
+            <label class="field-label" for="carSelect">
+              CHOOSE YOUR CAR
+            </label>
+            <select id="carSelect">
+              <option value="0">Lamborghini Revuelto</option>
+              <option value="1">Ferrari SF90 Stradale</option>
+              <option value="2">Porsche 911 GT3 RS</option>
+              <option value="3">McLaren 750S Spider</option>
+              <option value="4">Mercedes-AMG GT 63</option>
+            </select>
+
+            <p class="field-label">EXPLORE THE CAR</p>
+            <div class="angle-buttons" id="angleButtons"></div>
+
+            <h4>VEHICLE OVERVIEW</h4>
+            <dl class="spec-list">
+              <div>
+                <dt>POWERTRAIN</dt>
+                <dd id="specEngine">V12 plug-in hybrid</dd>
+              </div>
+              <div>
+                <dt>DRIVETRAIN</dt>
+                <dd id="specDrive">All-wheel drive</dd>
+              </div>
+              <div>
+                <dt>CHARACTER</dt>
+                <dd id="specCharacter">Flagship supercar</dd>
+              </div>
+            </dl>
+            <p class="spec-note">
+              Specifications are general model descriptions.
+              Exact specifications depend on model year and market.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="experience-section" id="experience">
+      <div class="container section-heading reveal">
+        <div>
+          <p class="eyebrow">03 / THE EXPERIENCE</p>
+          <h2>MORE THAN <em>METAL.</em></h2>
+        </div>
+        <p>A modern automotive website built around
+          design, interaction and storytelling.</p>
+      </div>
+
+      <div class="container feature-grid">
+        <article class="feature-card reveal">
+          <span>01</span><div class="feature-symbol">◇</div>
+          <h3>Premium Design</h3>
+          <p>A dark luxury aesthetic with gold accents,
+             confident typography and detailed imagery.</p>
+        </article>
+        <article class="feature-card reveal">
+          <span>02</span><div class="feature-symbol">◎</div>
+          <h3>Immersive Galleries</h3>
+          <p>Five interactive photo angles per car,
+             thumbnail selection and full-screen viewing.</p>
+        </article>
+        <article class="feature-card reveal">
+          <span>03</span><div class="feature-symbol">✦</div>
+          <h3>Responsive Experience</h3>
+          <p>Flexible layouts with mobile-friendly controls,
+             accessible navigation and smooth transitions.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact-section" id="contact">
+      <div class="container contact-inner reveal">
+        <p class="eyebrow">04 / THE CREATOR</p>
+        <h2>LET'S CREATE<br><em>SOMETHING ICONIC.</em></h2>
+        <p>VELORA is an independent web development concept
+          designed by Muhammad Ahsan Awan.</p>
+        <div class="actions contact-actions">
+          <a class="btn btn-gold"
+            href="https://github.com/ahsanawan-dev"
+            target="_blank" rel="noopener noreferrer">
+            Visit My GitHub ↗
+          </a>
+          <a class="btn btn-border"
+            href="https://ahsanawan-dev.github.io/3d-portfolio/"
+            target="_blank" rel="noopener noreferrer">
+            View My Portfolio ↗
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <div>
+        <strong>VELORA<span>.</span></strong>
+        <p>Independent digital automotive concept.</p>
+      </div>
+      <div>
+        <p>Developed by Muhammad Ahsan Awan</p>
+        <p>© <span id="year"></span> VELORA Motors Concept</p>
+      </div>
+    </div>
+    <p class="rights-note container">
+      VELORA is not affiliated with the vehicle manufacturers.
+      Photos are third-party imagery. Appropriate reuse permissions
+      must be confirmed before public distribution.
+    </p>
+  </footer>
+
+  <!-- FULLSCREEN PHOTO VIEWER -->
+  <dialog id="photoDialog" class="photo-dialog"
+    aria-labelledby="modalTitle">
+    <div class="modal-shell">
+      <div class="modal-top">
+        <span>VELORA / AUTOMOTIVE GALLERY</span>
+        <button id="modalClose" type="button"
+          aria-label="Close photo gallery">✕</button>
+      </div>
+      <div class="modal-photo media-frame">
+        <img id="modalImage" alt="">
+      </div>
+      <div class="modal-bottom">
+        <div>
+          <h2 id="modalTitle">Lamborghini Revuelto</h2>
+          <p id="modalCaption">Front view</p>
+        </div>
+        <div class="modal-controls">
+          <button id="modalPrev" type="button"
+            aria-label="Previous angle">←</button>
+          <span id="modalCounter">01 / 05</span>
+          <button id="modalNext" type="button"
+            aria-label="Next angle">→</button>
+        </div>
+      </div>
+      <div class="modal-thumbnails" id="modalThumbnails"></div>
+    </div>
+  </dialog>
+
+  <button id="backToTop" class="back-to-top" type="button"
+    aria-label="Back to top">↑</button>
+  <noscript>
+    <p class="noscript-notice">
+      Enable JavaScript to use the interactive galleries.
+    </p>
+  </noscript>
+</body>
+</html>
