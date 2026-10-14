@@ -16,9 +16,9 @@ VELORA Motors is a modern frontend project focused on automotive design, real ca
 
 ## 🌐 Live Demo
 
-**Visit the live website:**
-
-https://ahsanawan-dev.github.io/velora-car-showroom/
+<a href="https://ahsanawan-dev.github.io/velora-car-showroom/" target="_blank">
+  <img src="https://img.shields.io/badge/VELORA-Live_Showroom-C9A66B?style=for-the-badge&logo=googlechrome&logoColor=white" alt="VELORA Live Showroom" />
+</a>
 
 ---
 
