@@ -1,5 +1,13 @@
 # VELORA Motors — Luxury Car Showroom Website
 
+<a href="https://ahsanawan-dev.github.io/velora-car-showroom/" target="_blank">
+  <img
+    src="https://github.com/user-attachments/assets/a09671b4-55e4-46ce-9465-2f7ea0a0cdc2"
+    alt="VELORA Motors Luxury Car Showroom Preview"
+    width="100%"
+  />
+</a>
+
 A premium, responsive, and interactive luxury car showroom website built with **HTML, CSS, and JavaScript**.
 
 VELORA Motors is a modern frontend project focused on automotive design, real car photography, smooth interactions, responsive layouts, and a cinematic black-gold visual style.
