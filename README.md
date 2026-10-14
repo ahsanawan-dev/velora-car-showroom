@@ -34,52 +34,46 @@ This project was created as part of my frontend development journey to improve m
 
 ## ✨ Features
 
-- Premium black and gold luxury design
-- Fully responsive layout for desktop, tablet, and mobile
-- Interactive car collection section
+- Premium black-and-gold luxury interface
+- Fully responsive design for desktop, tablet, and mobile
 - Five featured performance cars
-- Five image views for each car:
-  - Front view
-  - Side view
-  - Rear view
-  - Interior view
-  - Wheel/detail view
-- Interactive image switching with JavaScript
-- Fullscreen gallery modal
+- Five detailed views for each car: front, side, rear, interior, and wheel/detail
+- Interactive JavaScript-powered car gallery
+- Fullscreen image preview experience
 - Smooth scrolling navigation
-- Sticky header
+- Sticky navigation header
 - Back-to-top button
 - Clean section-based layout
 - Modern typography and spacing
-- GitHub Pages deployment
+- Deployed with GitHub Pages
 
 ---
 
 ## 🚗 Featured Cars
 
-The project includes a curated selection of luxury and performance vehicles:
+A curated collection of five high-performance automotive icons:
 
-1. Lamborghini Revuelto  
-2. Ferrari SF90 Stradale  
-3. Porsche 911 GT3 RS  
-4. McLaren 750S Spider  
-5. Mercedes-AMG GT 63  
+1. **Lamborghini Revuelto** — Hybrid V12 flagship with dramatic Italian styling
+2. **Ferrari SF90 Stradale** — High-performance hybrid supercar with advanced aerodynamics
+3. **Porsche 911 GT3 RS** — Track-focused sports car built for precision and performance
+4. **McLaren 750S Spider** — Lightweight open-top supercar with extreme performance
+5. **Mercedes-AMG GT 63** — Luxury performance coupe combining power and refinement
 
-Each car includes multiple visual angles to create a more immersive showroom experience.
+Each vehicle includes multiple viewing angles for a more immersive digital showroom experience.
 
 ---
 
 ## 🛠️ Technologies Used
 
 | Technology | Purpose |
-|---|---|
-| HTML5 | Website structure |
-| CSS3 | Styling, layout, animations, responsive design |
-| JavaScript | Interactivity, gallery controls, dynamic content |
-| Git | Version control |
-| GitHub | Source code hosting |
-| GitHub Pages | Live website deployment |
-| VS Code | Code editor |
+| --- | --- |
+| **HTML5** | Semantic structure and page content |
+| **CSS3** | Responsive layouts, styling, animations, and visual effects |
+| **JavaScript** | Interactive galleries, image switching, and dynamic UI behavior |
+| **Git** | Version control and development history |
+| **GitHub** | Source code hosting and project management |
+| **GitHub Pages** | Live website deployment |
+| **VS Code** | Development and code editing |
 
 ---
 
