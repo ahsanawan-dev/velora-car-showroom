@@ -77,25 +77,34 @@ Each vehicle includes multiple viewing angles for a more immersive digital showr
 
 ---
 
+
 ## 📁 Project Structure
 
 ```text
 velora-car-showroom/
-│
-├── index.html
-├── style.css
-├── script.js
-│
+├── .vscode/
 ├── assets/
 │   ├── images/
-│   │   ├── revuelto/
-│   │   ├── sf90/
+│   │   ├── amggt/
 │   │   ├── gt3rs/
 │   │   ├── mclaren750s/
-│   │   └── amggt/
-│   │
+│   │   ├── revuelto/
+│   │   └── sf90/
 │   └── models/
 │       ├── car.glb
 │       └── car-old.glb
-│
+├── index.html
+├── style.css
+├── script.js
 └── README.md
+```
+
+
+## 👨‍💻 Author
+
+**Muhammad Ahsan Awan**
+
+- GitHub: https://github.com/ahsanawan-dev
+- Portfolio: https://ahsanawan-dev.github.io/3d-portfolio/
+
+Built with **HTML, CSS, and JavaScript**.
