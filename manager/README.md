@@ -2,6 +2,10 @@
 
 A PHP and MySQL extension to the VELORA portfolio project, built by **Muhammad Ahsan Awan**. It adds a database-backed car collection, an administrator workspace, and an enquiry inbox.
 
+**[Open live PHP + MySQL demo](https://velora-ahsan.great-site.net/manager/public/)**
+
+Browse the public collection and test enquiries with fictional details. Admin access is private. The demo stores submissions; it does not send email or create bookings.
+
 ## What works
 
 - Admin login with hashed passwords, session renewal, and a 30-minute inactivity timeout.

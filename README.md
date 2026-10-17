@@ -2,9 +2,15 @@
 
 A fictional automotive showroom built with **HTML, CSS and JavaScript**. Explore five cars through category filters, a photo-angle selector, and a fullscreen gallery.
 
-**[Open live showroom](https://ahsanawan-dev.github.io/velora-car-showroom/)** · [Developer portfolio](https://ahsanawan-dev.github.io/3d-portfolio/)
+**[Try PHP + MySQL demo](https://velora-ahsan.great-site.net/manager/public/)** · **[Open frontend gallery](https://ahsanawan-dev.github.io/velora-car-showroom/)** · [Developer portfolio](https://ahsanawan-dev.github.io/3d-portfolio/)
 
 [![VELORA Motors homepage with its featured car](docs/preview.jpg)](https://ahsanawan-dev.github.io/velora-car-showroom/)
+
+## Live backend demo
+
+[Open the database-backed showroom](https://velora-ahsan.great-site.net/manager/public/) to browse five published demonstration cars, filter by category, and submit a demo enquiry. Use fictional details such as `demo@example.com`; enquiries are stored in the project database, and no email or booking is sent. Administrator credentials are private.
+
+The HTTPS deployment was manually checked on 17 October 2026: admin login, publishing all five cars, public collection and photos, enquiry submission, and inbox status updates. See the [manager setup guide](manager/README.md) to run your own copy.
 
 ## Features
 
@@ -60,7 +66,7 @@ The original GitHub Pages demo is a frontend concept, with no booking service, p
 
 - Check the layouts on more mobile devices and browsers.
 - Optimize image delivery and document image sources and reuse permissions.
-- Continue extending the PHP and MySQL manager and prepare a hosted backend demo.
+- Continue extending the PHP and MySQL manager and broaden deployment checks.
 
 ## Image credits
 
