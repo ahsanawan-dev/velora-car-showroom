@@ -17,6 +17,8 @@ A fictional automotive showroom built with **HTML, CSS and JavaScript**. Explore
 
 ## Run locally
 
+**New: PHP + MySQL manager** — admin login, car management, draft/publish controls, and a stored enquiry inbox are available in [`manager/`](manager/README.md). Follow its XAMPP guide. This backend runs locally or on PHP hosting; GitHub Pages serves only the static showroom below.
+
 With Git and Python 3 installed:
 
 ```bash
@@ -54,11 +56,11 @@ Vehicle data lives in the `cars` array in `script.js`. Each entry maps a vehicle
 
 ## Scope and next steps
 
-This is a frontend concept, with no booking service, payments, live stock feed, or database. The vehicle viewer uses photographs; it is not a rendered 3D model.
+The original GitHub Pages demo is a frontend concept, with no booking service, payments, live stock feed, or database. The vehicle viewer uses photographs; it is not a rendered 3D model. The separate [PHP manager](manager/README.md) adds its own database-backed collection and enquiry workflow.
 
 - Check the layouts on more mobile devices and browsers.
 - Optimize image delivery and document image sources and reuse permissions.
-- Explore a PHP and MySQL admin interface as a future project.
+- Continue extending the PHP and MySQL manager and prepare a hosted backend demo.
 
 ## Image credits
 
