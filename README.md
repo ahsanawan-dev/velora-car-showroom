@@ -1,110 +1,72 @@
-# VELORA Motors — Luxury Car Showroom Website
+# VELORA Motors
 
-<a href="https://ahsanawan-dev.github.io/velora-car-showroom/" target="_blank">
-  <img
-    src="https://github.com/user-attachments/assets/a09671b4-55e4-46ce-9465-2f7ea0a0cdc2"
-    alt="VELORA Motors Luxury Car Showroom Preview"
-    width="100%"
-  />
-</a>
+A fictional automotive showroom built with **HTML, CSS and JavaScript**. Explore five cars through category filters, a photo-angle selector, and a fullscreen gallery.
 
-A premium, responsive, and interactive luxury car showroom website built with **HTML, CSS, and JavaScript**.
+**[Open live showroom](https://ahsanawan-dev.github.io/velora-car-showroom/)** · [Developer portfolio](https://ahsanawan-dev.github.io/3d-portfolio/)
 
-VELORA Motors is a modern frontend project focused on automotive design, real car photography, smooth interactions, responsive layouts, and a cinematic black-gold visual style.
+[![VELORA Motors homepage with its featured car](docs/preview.jpg)](https://ahsanawan-dev.github.io/velora-car-showroom/)
 
----
+## Features
 
-## 🌐 Live Demo
+- Five vehicle entries and 25 local photographs.
+- Collection filters for hybrids, performance cars, and grand touring.
+- Five views per vehicle: front, side, rear, interior, and wheel detail.
+- Car selection that updates the photo explorer and vehicle information.
+- Fullscreen gallery with previous/next controls and thumbnail selection.
+- Responsive navigation and reduced-motion handling.
 
-<a href="https://ahsanawan-dev.github.io/velora-car-showroom/" target="_blank">
-  <img src="https://img.shields.io/badge/VELORA-Live_Showroom-C9A66B?style=for-the-badge&logo=googlechrome&logoColor=white" alt="VELORA Live Showroom" />
-</a>
+## Run locally
 
----
+With Git and Python 3 installed:
 
-## 📌 Project Overview
-
-VELORA Motors is a fictional luxury automotive showroom concept designed to present high-performance cars in a premium digital experience.
-
-The website includes a cinematic landing section, curated car collection, interactive car angle viewer, fullscreen image gallery, smooth scrolling, responsive navigation, and modern UI animations.
-
-This project was created as part of my frontend development journey to improve my skills in layout design, JavaScript interactivity, responsive UI, and GitHub deployment.
-
----
-
-## ✨ Features
-
-- Premium black-and-gold luxury interface
-- Fully responsive design for desktop, tablet, and mobile
-- Five featured performance cars
-- Five detailed views for each car: front, side, rear, interior, and wheel/detail
-- Interactive JavaScript-powered car gallery
-- Fullscreen image preview experience
-- Smooth scrolling navigation
-- Sticky navigation header
-- Back-to-top button
-- Clean section-based layout
-- Modern typography and spacing
-- Deployed with GitHub Pages
-
----
-
-## 🚗 Featured Cars
-
-A curated collection of five high-performance automotive icons:
-
-1. **Lamborghini Revuelto** — Hybrid V12 flagship with dramatic Italian styling
-2. **Ferrari SF90 Stradale** — High-performance hybrid supercar with advanced aerodynamics
-3. **Porsche 911 GT3 RS** — Track-focused sports car built for precision and performance
-4. **McLaren 750S Spider** — Lightweight open-top supercar with extreme performance
-5. **Mercedes-AMG GT 63** — Luxury performance coupe combining power and refinement
-
-Each vehicle includes multiple viewing angles for a more immersive digital showroom experience.
-
----
-
-## 🛠️ Technologies Used
-
-| Technology | Purpose |
-| --- | --- |
-| **HTML5** | Semantic structure and page content |
-| **CSS3** | Responsive layouts, styling, animations, and visual effects |
-| **JavaScript** | Interactive galleries, image switching, and dynamic UI behavior |
-| **Git** | Version control and development history |
-| **GitHub** | Source code hosting and project management |
-| **GitHub Pages** | Live website deployment |
-| **VS Code** | Development and code editing |
-
----
-
-
-## 📁 Project Structure
-
-```text
-velora-car-showroom/
-├── .vscode/
-├── assets/
-│   ├── images/
-│   │   ├── amggt/
-│   │   ├── gt3rs/
-│   │   ├── mclaren750s/
-│   │   ├── revuelto/
-│   │   └── sf90/
-│   └── models/
-│       ├── car.glb
-│       └── car-old.glb
-├── index.html
-├── style.css
-├── script.js
-└── README.md
+```bash
+git clone https://github.com/ahsanawan-dev/velora-car-showroom.git
+cd velora-car-showroom
+python -m http.server 8000
 ```
 
+Open **http://localhost:8000**. If your system uses `python3`, use `python3 -m http.server 8000`. VS Code's Live Server extension also works. There are no npm dependencies or build steps.
 
-## 👨‍💻 Author
+## Explore the gallery
 
-**Muhammad Ahsan Awan**
+1. Use the collection filters to narrow the visible cars.
+2. Select a car in the photo explorer, then choose an angle.
+3. Open the fullscreen viewer to browse the photographs.
 
-- GitHub: https://github.com/ahsanawan-dev
-- Portfolio: https://ahsanawan-dev.github.io/3d-portfolio/
+| Input | Action |
+| --- | --- |
+| Left / Right arrow | Previous / next image while the fullscreen viewer is open |
+| Escape | Close the fullscreen viewer |
+| Tab / Shift+Tab | Move between interactive controls |
+| Enter or Space | Activate a focused button |
 
-Built with **HTML, CSS, and JavaScript**.
+## Implementation
+
+Vehicle data lives in the `cars` array in `script.js`. Each entry maps a vehicle to its image folder and five filenames. JavaScript coordinates the selected car, viewing angle, and fullscreen gallery; CSS handles the layout and black-and-gold visual treatment.
+
+| Path | Responsibility |
+| --- | --- |
+| `index.html` | Page sections, collection cards, explorer, and gallery dialog |
+| `style.css` | Layouts, colors, animation, and responsive rules |
+| `script.js` | Vehicle data, filtering, photo selection, and keyboard controls |
+| `assets/images/` | Photographs grouped by vehicle |
+| `docs/preview.jpg` | Screenshot of the live showroom |
+
+## Scope and next steps
+
+This is a frontend concept, with no booking service, payments, live stock feed, or database. The vehicle viewer uses photographs; it is not a rendered 3D model.
+
+- Check the layouts on more mobile devices and browsers.
+- Optimize image delivery and document image sources and reuse permissions.
+- Explore a PHP and MySQL admin interface as a future project.
+
+## Image credits
+
+Vehicle names belong to their respective manufacturers. VELORA is an independent concept and is not affiliated with them. The photographs are third-party imagery; a complete source and permission record is not yet included. The repository does not grant rights to reuse those images.
+
+## Feedback
+
+[Open an issue](https://github.com/ahsanawan-dev/velora-car-showroom/issues) with the car, selected angle, browser, and steps to reproduce a problem.
+
+Built by [Muhammad Ahsan Awan](https://github.com/ahsanawan-dev).
+
